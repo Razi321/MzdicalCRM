@@ -6,8 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 use Illuminate\Support\Facades\Auth;
-
-use App\User;
+use App\Models\User;
 class AdminsController extends Controller
 {
     /**
@@ -109,6 +108,7 @@ class AdminsController extends Controller
         //$user ->role =$request->input('role');
         $user ->name =$request->input('name');
         $user ->email =$request->input('email');
+        $user ->phone =$request->input('phone');
 
 
                     $user->save();

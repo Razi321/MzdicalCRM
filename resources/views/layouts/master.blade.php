@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    CRM test
+    Administrateurs
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -34,6 +34,7 @@
   <link href="../assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
   <!-- CSS Just for demo purpose, don't include it in your project -->
   <link href="../assets/demo/demo.css" rel="stylesheet" />
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 
 <body class="">
@@ -80,10 +81,10 @@
               <p>User Profile</p>
             </a>
           </li>
-          <li >
-            <a href="./tables.html">
+          <li class="active">
+            <a href="/admins">
               <i class="now-ui-icons design_bullet-list-67"></i>
-              <p>Table List</p>
+              <p>Administrateurs</p>
             </a>
           </li>
           <li>
@@ -148,6 +149,7 @@
 
                 </div>
                 <div class="card-body">
+                    @include('inc.messages')
                   @yield('content')
                 </div>
               </div>
