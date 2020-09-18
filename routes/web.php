@@ -24,3 +24,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('admins','AdminsController');
 Route::resource('clients','ClientsController');
+Route::resource('services','ServicesController');
