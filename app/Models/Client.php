@@ -15,4 +15,10 @@ class Client extends Model
  public $primarykey ='id';
  //timestamps
  public $timestamps =true ;
+
+ public function fiches()
+    {
+        return $this->hasMany('App\Models\Fiche','client_id','id');
+    }
+
 }

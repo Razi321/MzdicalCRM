@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
 
@@ -25,3 +25,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('admins','AdminsController');
 Route::resource('clients','ClientsController');
 Route::resource('services','ServicesController');
+Route::resource('fiches','FichesController');

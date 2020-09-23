@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Administrateurs
+  Fiches
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -57,13 +57,13 @@
               <p>Clients</p>
             </a>
           </li>
-          <li class="active" >
+          <li>
             <a href="/services">
               <i class="now-ui-icons "></i>
               <p>Services</p>
             </a>
           </li>
-          <li>
+          <li class="active" >
             <a href="/fiches">
               <i class="now-ui-icons "></i>
               <p>Fiches</p>
@@ -102,7 +102,6 @@
             <span class="navbar-toggler-bar navbar-kebab"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navigation">
-
             <ul class="navbar-nav">
 
                 <li class="nav-item dropdown">
